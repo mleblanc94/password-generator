@@ -72,9 +72,15 @@ header {
   clear: both;
 }
 
-.quantity-section {
+.quantity-section, .character-types {
   text-align: center;
 }
+
+/* .character-types {
+  display: flex;
+  flex-direction: column;
+
+} */
 
 .btn {
   border: none;
