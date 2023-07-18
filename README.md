@@ -3,28 +3,30 @@ An application the generates a random password for a user after they specify how
 
 ## Description
 
-- I am motivated to create this project to not only work on my responsive HTML and CSS skills, but also build a portfolio that I can show off to future employers.
-- I created this project in order to showcase my skills as a developer with both the portfolio itself as well as the projects that are included on it. 
-- By creating this portfolio, I solved the problem of having a place to store the projects that I have created to show off to future employers
-- Through doing this activity, I learned more about organizing HTML and CSS, how to make the webpage responsive, and how to include other projects in a portfolio application 
+- I am motivated to create this project to work on my Javascript skills and also to provide users with a way to generate a password that meets their specifications.
+- I created this project to work on my javascript looping skills and ability to write functions. I was able to connect all of this together to return a user a response and random password!
+- By creating this application, I solved the problem of ever needing to think of a random password on my own again! In the future, I will always use this application for my random passwords.
+- Through doing this activity, I learned more about using javascript in real life applications. Particularly, using for loops, declaring variables, writing and using functions, using if statements, and generally concatnating different things to produce a random password.
 
 
 ## Installation
 
 - No installation is required, just use the URL as it is already available using GitHub Pages
-- GitHub Pages URL: https://mleblanc94.github.io/my-portfolio/
+- GitHub Pages URL: https://mleblanc94.github.io/password-generator/
 
 
 ## Usage
 
-- The use of this website is to let employers see the projects that I have created in order to showcase my skillset.
+- The use of this website is to let a user generate a random password based off the specifications that they give us.
 
-![myportfolio-screenshot-top](https://github.com/mleblanc94/my-portfolio/assets/60248680/1b8e641b-2107-4867-b20f-29d153e8cbbd)
-![myportfolio-screenshot-middle](https://github.com/mleblanc94/my-portfolio/assets/60248680/3211a714-bf58-446d-809e-a89739cee58e)
-![myportfolio-screenshot-bottom](https://github.com/mleblanc94/my-portfolio/assets/60248680/8d2f0d5e-d7f0-4065-a75e-07d6685a7e00)
+![image](https://github.com/mleblanc94/password-generator/assets/60248680/ba2dfc94-89f0-49be-808d-fb7fa7fd33b5)
+![image](https://github.com/mleblanc94/password-generator/assets/60248680/e522c639-b3fb-4ae1-a958-2b95495d47a3)
+![image](https://github.com/mleblanc94/password-generator/assets/60248680/0cd876db-bcd1-4c2b-aad1-0a0f19666a94)
+![image](https://github.com/mleblanc94/password-generator/assets/60248680/d0458da5-bd0f-4fa8-92a4-985b46a4de13)
 
-- Clicking on the links in the nav bar will take a user to that place on the website.
-- Clicking on the projects listed in the Work section will take a user to my past projects
+- Clicking on the generate password button, the user will be given a few prompts to create a random password to their specifications.
+- The user will enter a desired length for the password, as well as if they want lower case characters, uppercase characters, numeric characters
+- The user will be returned a random password that meets their specifications
 
 
 ## Credits
