@@ -11,9 +11,18 @@ function generatePassword() {
     let uppercaseChar = confirm("Would you like to include uppercase letters in your password");
     let lettersChar = confirm("Would you like to include number characters in your password");
     let specialChar = confirm("Would you like to include special characters in your password");
+    
+    function checkCharValues() {
+      
+    }
 
     //Start an empty array to push the different characters into depending on what they did and did not want
     let passwordArray = [];
+    if (!lowercaseChar && !uppercaseChar && !lettersChar && !specialChar){
+      console.log("ALL OF THESE ARE FALSE")
+      alert("You need some characters for your password!")
+      generatePassword();
+    } else {
     //If the user confirmed they wanted the specific characters, add them to the password array as possibilities as characters in the password
     if (lowercaseChar) {
       passwordArray.push("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z");
@@ -27,6 +36,7 @@ function generatePassword() {
     if (specialChar) {
       passwordArray.push("!","@","#","$","%","^","&","*","(",")","-","_","=","+","[","]","{","}","<",">",",",".","?","/",":",";","|","~");
     }
+  }
 
     //An empty string to start what will be the returned password
     let realPassword = "";
@@ -38,8 +48,8 @@ function generatePassword() {
       }
       //Once loop is complete, variable realPassword contains password to be returned
       return realPassword;
+    }
   }
-}
  
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
