@@ -18,8 +18,8 @@ function generatePassword() {
 
     //Start an empty array to push the different characters into depending on what they did and did not want
     let passwordArray = [];
+    //If the user rejected all character types, have them try again
     if (!lowercaseChar && !uppercaseChar && !lettersChar && !specialChar){
-      console.log("ALL OF THESE ARE FALSE")
       alert("You need some characters for your password!")
       generatePassword();
     } else {
