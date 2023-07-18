@@ -6,41 +6,35 @@ function generatePassword() {
   } else {
     let lowercaseChar = confirm("Would you like to include lowercase letters in your password");
     let uppercaseChar = confirm("Would you like to include uppercase letters in your password");
-    let LettersChar = confirm("Would you like to include number characters in your password");
+    let lettersChar = confirm("Would you like to include number characters in your password");
     let specialChar = confirm("Would you like to include special characters in your password");
 
     let passwordArray = [];
-    let lowerCaseCharacterSet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
-    let upperCaseCharacterSet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
-    let numericCharacterSet = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
-    let specialCharacterSet = ["!","@","#","$","%","^","&","*","(",")","-","_","=","+","[","]","{","}","<",">",",",".","?","/",":",";","|","~"];
 
     if (lowercaseChar) {
-      passwordArray.concat(lowerCaseCharacterSet);
+      passwordArray.push("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z");
     }
   
     if (uppercaseChar) {
-      passwordArray.concat(upperCaseCharacterSet);
+      passwordArray.push("A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z");
     }
-    if (uppercaseChar) {
-      passwordArray.concat(upperCaseCharacterSet);
+    if (lettersChar) {
+      passwordArray.push(1, 2, 3, 4, 5, 6, 7, 8, 9, 0);
     }
-    if (uppercaseChar) {
-      passwordArray.concat(upperCaseCharacterSet);
+    if (specialChar) {
+      passwordArray.push("!","@","#","$","%","^","&","*","(",")","-","_","=","+","[","]","{","}","<",">",",",".","?","/",":",";","|","~");
     }
-  
+
+    let realPassword = "";
   
       for (let i = 0; i < passLength; i++) {
-  
+        let index = passwordArray[Math.floor(Math.random() * passwordArray.length)];
+        realPassword += index;
       }
-  
+      return realPassword;
   }
-  }
+}
  
-  
-  
-  
-
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
