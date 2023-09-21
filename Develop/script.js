@@ -4,7 +4,7 @@ function generatePassword() {
   //If the password length requested is under 8 characters or more than 128, ask them to try again
   if (passLength < 8 || passLength > 128 || isNaN(passLength)) {
     alert("Your password is not the correct length, please try again");
-    generatePassword();
+    return generatePassword();
   } else {
     //Ask the user to confirm whether or not they would like lowercase, uppercase, numeric, and special characters included
     let lowercaseChar = confirm("Would you like to include lowercase letters in your password");
@@ -17,7 +17,7 @@ function generatePassword() {
     //If the user rejected all character types, have them try again
     if (!lowercaseChar && !uppercaseChar && !lettersChar && !specialChar){
       alert("You need some characters for your password!")
-      generatePassword();
+      return generatePassword();
     } else {
     //If the user confirmed they wanted the specific characters, add them to the password array as possibilities as characters in the password
     if (lowercaseChar) {
