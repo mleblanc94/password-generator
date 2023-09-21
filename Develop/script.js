@@ -11,10 +11,6 @@ function generatePassword() {
     let uppercaseChar = confirm("Would you like to include uppercase letters in your password");
     let lettersChar = confirm("Would you like to include number characters in your password");
     let specialChar = confirm("Would you like to include special characters in your password");
-    
-    function checkCharValues() {
-      
-    }
 
     //Start an empty array to push the different characters into depending on what they did and did not want
     let passwordArray = [];
